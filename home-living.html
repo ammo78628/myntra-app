@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home & Living - Myntra Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+</head>
+<body style="background-color: #fdeef0;">
+    
+   <nav class="navbar shadow-lg navbar-expand-lg bg-white">
+    <button class="navbar-toggler text-dark border-0 ms-3 d-lg-none" type="button" id="navbarToggler" onclick="toggleMenu()">
+        <span class="bi bi-list fs-2"></span>
+    </button>
+
+    <a class="navbar navbar-brand p-3 ms-3" href="index.html"><img src="images/image.png" width="70px"/></a>
+    <ul class="d-flex navbar-nav">
+         <li><a href="men.html" class="nav-link fw-bold text-body">MEN</a></li>
+            <li><a href="women.html" class="nav-link fw-bold text-black">WOMEN</a></li>
+            <li><a href="kids.html" class="nav-link fw-bold text-black">KIDS</a></li>
+            <li><a href="home-living.html" class="nav-link fw-bold text-black">HOME LIVING</a></li>
+            <li><a href="studio.html" class="nav-link fw-bold text-black">STUDIO</a></li>
+    </ul>     
+    <div class="searchbox input-group w-25 border-1">
+        <button type="button" class="btn text-secondary"><span class="bi bi-search"></span></button>
+        <input type="text" placeholder="Search for products, brands and more" class="border-0 w-75 put">
+    </div>
+    <div class="buttons">
+        <a href="account.html" class="text-dark"><span class="bi bi-person d-inline-block icons icons3"></span></a>
+        <span class="bi bi-heart d-inline-block icons icons1"></span>
+        <a href="cart.html" class="text-dark"><span class="bi bi-handbag d-inline-block icons icons2"></span></a>
+    </div>
+</nav>
+
+    <div class="container my-5">
+        <h3 class="fw-bold mb-4 text-uppercase">Home & Living Essentials <span class="text-muted fs-6">(12 Items)</span></h3>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Portico</h6><p class="text-muted small mb-2 text-truncate">Cotton Bed Sheet</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹1,499</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">D'Decor</h6><p class="text-muted small mb-2 text-truncate">Window Curtains</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹899</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Bombay Dyeing</h6><p class="text-muted small mb-2 text-truncate">Bath Towels</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹599</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Trident</h6><p class="text-muted small mb-2 text-truncate">Sleeping Pillows</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹749</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Story@Home</h6><p class="text-muted small mb-2 text-truncate">Anti-Skid Rug</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹499</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Philips</h6><p class="text-muted small mb-2 text-truncate">Desk Lamp</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹1,199</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Prestige</h6><p class="text-muted small mb-2 text-truncate">Vacuum Flask</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹699</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Kurl-On</h6><p class="text-muted small mb-2 text-truncate">Memory Mattress</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹8,999</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1610701596007-11502861bcfa?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Home Centre</h6><p class="text-muted small mb-2 text-truncate">Ceramic Dinner Set</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹2,499</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Borosil</h6><p class="text-muted small mb-2 text-truncate">Storage Containers</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹799</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">@home</h6><p class="text-muted small mb-2 text-truncate">Wooden Wall Clock</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹899</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Urban Ladder</h6><p class="text-muted small mb-2 text-truncate">Tufted Bean Bag Cover</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹649</span></div></div></a></div></div>
+
+        </div>
+    </div>
+</body>
+</html>

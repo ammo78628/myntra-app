@@ -1,0 +1,304 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    overflow-x: hidden;
+}
+#hide{
+    display: none;
+}
+#spins .spinner-border {
+    width: 4rem;        /* Default is 2rem. Increase this to make it bigger */
+    height: 4rem;       /* Keep width and height equal to maintain the circle shape */
+    border-width: 0.35em; /* Optional: Makes the spinning border lines thicker as well */
+}
+#spins {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fdeef0; 
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    gap: 15px;                 
+    z-index: 9999;             
+}
+ul li{
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.navbar {
+    flex-wrap: wrap !important;
+    padding: 0.5rem 0 !important;
+    gap: 10px;
+}
+
+.navbar-nav {
+    width: auto;
+    flex-shrink: 0;
+}
+
+.navbar-toggler {
+    order: -1;
+}
+
+@media only screen and (max-width: 1200px) {
+    ul li {
+        font-size: 13px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    ul li {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    ul li {
+        font-size: 13px;
+        padding-left: 0;
+    }
+}
+.searchbox{
+    margin-left: 15%;
+    width: 30%;
+    font-size: smaller;
+    background-color: rgb(231, 231, 231);
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .searchbox {
+        margin-left: 0;
+        width: 20%;
+        min-width: auto;
+        flex: 1 1 auto;
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .searchbox {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .searchbox {
+        display: none !important;
+    }
+}
+.put{
+    outline: none;
+    background-color: rgb(231, 231, 231);
+}/* Update your existing desktop .buttons and .icons properties to match this exactly */
+
+.buttons {
+    margin-left: auto;          
+    display: flex !important; 
+    flex-direction: row !important;
+    align-items: center;
+    gap: 45px;
+    flex-wrap: nowrap;
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .buttons {
+        margin-left: auto;
+        gap: 25px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .buttons {
+        margin-left: auto;
+        gap: 20px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .buttons {
+        margin-left: auto;
+        gap: 12px;
+        padding-right: 5px;
+    }
+}
+
+.icons {
+    margin-left: 0px !important;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+}
+.icons1::after {
+    font-size: smaller;
+    font-weight: bolder;
+    content: 'Wishlist';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1200px) {
+    .icons1::after,
+    .icons2::after,
+    .icons3::after {
+        content: '';
+        display: none;
+    }
+}
+
+.icons2::after {
+    font-size: smaller;
+    font-weight: bolder;
+    content: 'Bag';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers text under the bag */
+    white-space: nowrap;
+}
+
+.icons3::after {
+    font-size: smaller;
+    font-weight: bolder;
+    content: 'Profile';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers text under the profile icon */
+    white-space: nowrap;
+}
+.card{
+    width: 30%;
+    margin:auto;
+}
+.num{
+    width: 90%;
+    padding: 0.5rem;
+    padding-left: 5%;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid rgb(155, 155, 155);
+}
+.check{
+   position: relative;
+   top: -10px;
+}
+.sizeo{
+    font-size:15px;
+}
+.everything{
+    font-size: 14px;
+}
+.conti{
+    border: none;
+    width: 90%;
+    height: 40px;
+}
+.signup{
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 993px) {
+    /* 1. Hide the menu links completely by default on mobile */
+    .navbar-nav {
+        display: none !important;
+    }
+
+    /* 2. When clicked, drop them down nicely underneath the bar without breaking anything */
+    .navbar-nav.show-mobile-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        order: 5 !important;
+        padding: 10px 0 10px 20px !important;
+        margin-top: 10px;
+    }
+
+    .navbar-nav.show-mobile-menu li {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+
+    /* Keep your existing card/brand rules */
+    .card {
+        width: 100% !important;
+        margin: auto;
+    }
+    .navbar-brand {
+        margin-right: 5px;
+        width: 25px;
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem !important;
+    }
+}
+.product-card {
+    width: 100% !important; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+}
+
+.product-card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem !important;
+    }
+
+    .navbar-brand {
+        padding: 0.5rem 0 !important;
+    }
+
+    .navbar-nav.show-mobile-menu {
+        background-color: #f8f9fa;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .icons {
+        height: 35px;
+        font-size: 1.2rem;
+    }
+}
+
+footer ul li {
+    padding-left: 0 !important;
+}
+/* Custom utility for category pages */
+.category-card-img {
+    height: 300px;
+    object-fit: cover;
+}
+.text-orange {
+    color: #ff3f6c;
+}
+.bg-orange {
+    background-color: #ff3f6c;
+    color: white;
+}
+.bg-orange:hover {
+    background-color: #e0355f;
+    color: white;
+}

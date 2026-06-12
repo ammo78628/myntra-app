@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids' Shopping - Myntra Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+</head>
+<body style="background-color: #fdeef0;">
+    
+   <nav class="navbar shadow-lg navbar-expand-lg bg-white">
+    <button class="navbar-toggler text-dark border-0 ms-3 d-lg-none" type="button" id="navbarToggler" onclick="toggleMenu()">
+        <span class="bi bi-list fs-2"></span>
+    </button>
+
+    <a class="navbar navbar-brand p-3 ms-3" href="index.html"><img src="images/image.png" width="70px"/></a>
+    <ul class="d-flex navbar-nav">
+         <li><a href="men.html" class="nav-link fw-bold text-body">MEN</a></li>
+            <li><a href="women.html" class="nav-link fw-bold text-black">WOMEN</a></li>
+            <li><a href="kids.html" class="nav-link fw-bold text-black">KIDS</a></li>
+            <li><a href="home-living.html" class="nav-link fw-bold text-black">HOME LIVING</a></li>
+            <li><a href="studio.html" class="nav-link fw-bold text-black">STUDIO</a></li>
+    </ul>     
+    <div class="searchbox input-group w-25 border-1">
+        <button type="button" class="btn text-secondary"><span class="bi bi-search"></span></button>
+        <input type="text" placeholder="Search for products, brands and more" class="border-0 w-75 put">
+    </div>
+    <div class="buttons">
+        <a href="account.html" class="text-dark"><span class="bi bi-person d-inline-block icons icons3"></span></a>
+        <span class="bi bi-heart d-inline-block icons icons1"></span>
+        <a href="cart.html" class="text-dark"><span class="bi bi-handbag d-inline-block icons icons2"></span></a>
+    </div>
+</nav>
+
+    <div class="container my-5">
+        <h3 class="fw-bold mb-4 text-uppercase">Kids' Fashion Wear <span class="text-muted fs-6">(12 Items)</span></h3>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark">
+                    <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img">
+                    <div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Gini & Jony</h6><p class="text-muted small mb-2 text-truncate">Hooded Sweatshirt</p>
+                    <div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹799</span><span class="text-muted text-decoration-line-through small">₹1,499</span></div></div>
+                </a></div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark">
+                    <img src="https://images.unsplash.com/photo-1622243504745-02edec9a61ac?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img">
+                    <div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Allen Solly</h6><p class="text-muted small mb-2 text-truncate">Checked Shirt</p>
+                    <div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹699</span><span class="text-muted text-decoration-line-through small">₹1,299</span></div></div>
+                </a></div>
+            </div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">U.S. Polo</h6><p class="text-muted small mb-2 text-truncate">Denim Dungarees</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹1,299</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Nautic</h6><p class="text-muted small mb-2 text-truncate">Cotton Tee</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹399</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Crocs</h6><p class="text-muted small mb-2 text-truncate">Waterproof Clogs</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹1,499</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Chicco</h6><p class="text-muted small mb-2 text-truncate">Cotton Romper</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹549</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Mothercare</h6><p class="text-muted small mb-2 text-truncate">Printed Frock</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹999</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1514989940723-e8e5163ccbe8?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Puma Kids</h6><p class="text-muted small mb-2 text-truncate">Lightweight Sneakers</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹1,799</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Tales & Stories</h6><p class="text-muted small mb-2 text-truncate">Printed Shorts</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹499</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Peppermint</h6><p class="text-muted small mb-2 text-truncate">Layered Gown</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹1,999</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Max</h6><p class="text-muted small mb-2 text-truncate">Pyjama Set Pack</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹699</span></div></div></a></div></div>
+            <div class="col"><div class="card h-100 border-0 shadow-sm product-card"><a href="product-detail.html" class="text-decoration-none text-dark"><img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=400&q=80" class="card-img-top category-card-img"><div class="card-body bg-white text-center"><h6 class="fw-bold mb-1">Skechers</h6><p class="text-muted small mb-2 text-truncate">Girls Sparkle Shoes</p><div class="d-flex justify-content-center align-items-center gap-2"><span class="fw-bold text-danger">₹2,199</span></div></div></a></div></div>
+
+        </div>
+    </div>
+</body>
+</html>
